@@ -52,4 +52,4 @@ Feel free to report <b>issues</b> and <b>contribute</b> to this repository.
 
 Copyright © 2022 Abhijeet kumar. All rights reserved.
 
-Licensed under the [CC0-1.0 License.](LICENSE)
+Licensed under the [MIT License.](LICENSE)
