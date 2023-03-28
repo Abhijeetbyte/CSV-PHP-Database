@@ -22,6 +22,9 @@ Just copy the files to your webspace - thats all :)
 
 Default password: asfr125g@83
 
+<br/>
+
+
 ### Build
 
 After uploading the files , creat a folder "data", where all the data files are going to save.< br/>
@@ -39,7 +42,7 @@ After uploading the files , creat a folder "data", where all the data files are 
 <br/>
 
 
-## Reporting Issues & Contributions
+### Reporting Issues & Contributions
 
 Feel free to report <b>issues</b> and <b>contribute</b> to this repository.
 
