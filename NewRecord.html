@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel=" stylesheet" type="text/css" href="style.css" />
+    <title>New Record</title>
+</head>
+
+<body>
+
+    <form class="dataform" action="SaveRecord.php" method="post">
+
+        <center>
+            <h4>Enter Data</h4>
+        </center>
+
+        <label>Roll No.</label>
+        <input type="text" name="roll_no" placeholder="Your Roll No." required>
+
+        <label>Password</label>
+        <input type="text" name="pass" placeholder="Enter Password" required>
+        <br />
+        <br />
+
+        <label>Name</label>
+        <input type="text" name="student_name" placeholder="Your Full Name" required />
+
+        <label>Grade (1 - 12th)</label>
+        <input type="number" name="student_grade" placeholder="Enter your grade" required />
+
+        <label>Marks</label>
+        <input type="number" name="student_mark" placeholder="Enter your marks" required />
+
+        <label>Remarks</label>
+        <textarea name="remarks" placeholder="Write something..." style="height: 50px"></textarea>
+        <center>
+            <button class="button">Submit</button>
+        </center>
+    </form>
+    <br />
+    <br />
+    <br />
+
+
+    <div class="footer">
+        <p>
+            Copyright &copy; 2023
+        </p>
+    </div>
+</body>
+
+</html>
