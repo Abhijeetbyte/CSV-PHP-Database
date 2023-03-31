@@ -36,19 +36,14 @@ Default password: asfr125g@83
 * etc..
 
 <br/>
-<br/>
-
 In summary, using CSV files as a database for a website can work for simple and small-scale projects, but it may not be the best option for larger and more complex applications 😄.
 
-<br/>
 <br/>
 
 ### Demo 
 
 * 👉 **Clcik  [here](https://testing-my-pages.000webhostapp.com/)**
 <br/>
-<br/>
-
 
 ### Reporting Issues & Contributions
 
@@ -58,6 +53,6 @@ Feel free to report <b>issues</b> and <b>contribute</b> to this repository.
 
 ## License
 
-Copyright © 2022 Abhijeet kumar. All rights reserved.
+Copyright © 2023 Abhijeet kumar. All rights reserved.
 
 Licensed under the [MIT License.](LICENSE)
