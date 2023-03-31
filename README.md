@@ -25,12 +25,20 @@ Default password: asfr125g@83
 <br/>
 
 
-### Build
+### Limitations ☹
 
-After uploading the files , creat a folder "data", where all the data files are going to save.< br/>
+**Lack some of the features that traditional databases offer, such as**
 
+* indexing
+* querying
+* transactions
+* concurrent access by multiple users (solved to an extent by `flock()` function)
+* etc..
 
-![image](https://user-images.githubusercontent.com/80936610/228354632-9c0eb1d8-9d87-4402-9fe4-ad0d173ce29c.png)
+<br/>
+<br/>
+
+In summary, using CSV files as a database for a website can work for simple and small-scale projects, but it may not be the best option for larger and more complex applications 😄.
 
 <br/>
 <br/>
