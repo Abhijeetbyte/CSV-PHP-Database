@@ -83,6 +83,42 @@ textarea {
 
 }
 
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+table,
+th,
+td {
+    padding: 10px 5px;
+    text-align: left;
+}
+
+table thead tr {
+    background-color: #33a0e9;
+    color: #fff;
+    text-align: left;
+}
+
+table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+table tbody tr:last-of-type {
+    border-bottom: 2px solid #33a0e9;
+}
+
+
+
 .footer {
 
     width: 100%;
