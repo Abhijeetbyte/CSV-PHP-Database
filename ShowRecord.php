@@ -28,12 +28,24 @@ if(file_exists($filename)) {
 
 if (($handle = fopen($filename, "r")) !== FALSE) {  // succesfully open & read file
 
-    while (($row = fgetcsv($handle, 1000, ",")) !== FALSE) {   // extract rows data
 
+  if (flock($handle, LOCK_SH)) { // shared lock the file while reading
+
+    while (($row = fgetcsv($handle, 1000, ",")) !== FALSE) {   // extract rows data
       $records[] = $row; // append in a array
     }
 
+    flock($handle, LOCK_UN); // unlock the file after reading
+
+    } else {
+        echo "<script type='text/javascript'>alert('Error encountered while getting shared lock on file !');
+        </script>";
+        die(); // error handler
+    }
+
+    
     fclose($handle);
+
 
   } else {
 
@@ -53,9 +65,10 @@ if (($handle = fopen($filename, "r")) !== FALSE) {  // succesfully open & read f
     
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"" />
   <link rel=" stylesheet" type="text/css" href="style.css" />
   <title>Records</title>
+
 
 
 </head>
