@@ -2,10 +2,13 @@
 
 //varaible setting
 
-$Roll = $_REQUEST['roll_no'] ?? '01'; // fetch roll no value or with a default variable
+$rollNo = $_POST['roll_no'] ?? '01'; // fetch roll no value or with a default variable
 
-$filename = 'data/'.$Roll.'.csv';  // inside data folder
 
+// Setting Variables
+
+$dir = 'data'; // default folder name, files (.csv) store inside it
+$filename = $dir . '/' . $rollNo . '.csv'; // file naming acc. to Roll no.
 $records = [];  // empty array to store all records
 
 
@@ -50,39 +53,10 @@ if (($handle = fopen($filename, "r")) !== FALSE) {  // succesfully open & read f
     
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
   <link rel=" stylesheet" type="text/css" href="style.css" />
   <title>Records</title>
 
-<style>
-
-table {
-    border-collapse: collapse;
-    margin: 25px 0;
-    border-radius: 5px 5px 0 0;
-    overflow : hidden;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-}
-table, th, td {
-  padding: 10px 5px ;
-  text-align: left;
-}
-table thead tr {
-    background-color: #33a0e9;
-    color: #fff;
-    text-align: left;
-}
-table tbody tr {
-    border-bottom: 1px solid #dddddd;
-}
-table tbody tr:nth-of-type(even) {
-    background-color: #f3f3f3;
-}
-table tbody tr:last-of-type {
-    border-bottom: 2px solid  #33a0e9;
-}
-
-</style>
 
 </head>
 
@@ -92,7 +66,7 @@ table tbody tr:last-of-type {
  
 <h1> Data </h1>
 
-    <table style="width:80%">
+    <table>
     
         <thead>
             <th>Roll</th>
