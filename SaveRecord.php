@@ -13,14 +13,13 @@ $remarks = $_POST['remarks'];
 
 // Setting Variables
 
-$password = 'asfr125g@83'; // default password
 $dir = 'data'; // default folder name, files (.csv) store inside it
 $filename = $dir . '/' . $rollNo . '.csv'; // file naming acc. to Roll no.
 
 
 // Validate password
-if ($password !== 'asfr125g@83') {
-    echo "<script>alert('Incorrect password, try again!');history.go(-1);</script>";
+if ($password !== 'admin123') { //  default folder name
+    echo "<script>alert('Incorrect Password, try again!');history.go(-1);</script>";
 
     exit();  // Terminate the current script
 }
