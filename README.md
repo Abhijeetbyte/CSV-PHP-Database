@@ -20,7 +20,7 @@ The webpage works on both mobile web browsers & desktop.
 Download ZIP with latest version from master branch.<br/>
 Just copy the files to your webspace - thats all :)
 
-Default password: asfr125g@83
+**Default password: admin123**
 
 <br/>
 
