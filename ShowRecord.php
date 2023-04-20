@@ -2,13 +2,13 @@
 
 //varaible setting
 
-$rollNo = $_POST['roll_no'] ?? '01'; // fetch roll no value or with a default variable
+$idNo = $_POST['id_no']; // fetch id value
 
 
 // Setting Variables
 
 $dir = 'data'; // default folder name, files (.csv) store inside it
-$filename = $dir . '/' . $rollNo . '.csv'; // file naming acc. to Roll no.
+$filename = $dir . '/' . $idNo . '.csv'; // file naming acc. to ID no.
 $records = [];  // empty array to store all records
 
 
@@ -82,7 +82,7 @@ if (($handle = fopen($filename, "r")) !== FALSE) {  // succesfully open & read f
     <table>
     
         <thead>
-            <th>Roll</th>
+            <th>ID</th>
             <th>Name</th>
             <th>Grade</th>
             <th>Marks</th>
