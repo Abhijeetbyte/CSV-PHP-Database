@@ -8,7 +8,7 @@
 If you want to build a simple webiste with a backend.
 
 The **simplest** and **convenient** way of doing this, considering if you don't want to setup any database 
-and not going to scale too much.  <br/>
+and not going to scale too much. It stores data objects in collections and documents. <br/>
 
 The webpage works on both mobile web browsers & desktop.
 
