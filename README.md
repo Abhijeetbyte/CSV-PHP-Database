@@ -5,12 +5,11 @@
 
 ### Why? 🙄
 
-If you want to build a simple webiste with a backend.
+If you want to build a simple webiste with a backend for small projects where you want to avoid the complexity of setting up a database.
 
-The **simplest** and **convenient** way of doing this, considering if you don't want to setup any database 
-and not going to scale too much. It stores data objects in collections and documents. <br/>
+It is **simple** and **convenient**. And stores data objects in collections and documents. <br/>
 
-The webpage works on both mobile web browsers & desktop.
+The example webpage works on both mobile web browsers & desktop.
 
 ### Requirements
 
@@ -36,13 +35,15 @@ Just copy the files to your webspace - thats all :)
 * etc..
 
 <br/>
-In summary, using CSV files as a database for a website can work for simple and small-scale projects, but it may not be the best option for larger and more complex applications 😄.
+Note: Using CSV files as a database for a website can work for simple and small-scale projects, but it may not be the best option for larger and more complex applications 😄.
+
+It can work for very small-scale applications with minimal data and low traffic, it is generally not recommended for anything beyond the most basic use cases. 
 
 <br/>
 
 ### Demo 
 
-* 👉 **Clcik  [here](https://testing-my-pages.000webhostapp.com/)**
+* 👉 **Clcik  [here](#)**
 <br/>
 
 ### Reporting Issues & Contributions
